@@ -1,0 +1,366 @@
+body,
+html {
+    font: normal 15px arial;
+    background-color: #dcdcdc;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*       Login          */
+
+.centralize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.container-login {
+    background-color: #dcdcdc;
+    padding: 20px;
+    border: solid;
+    border-color: black;
+}
+
+.login {
+    background-color: #247BA0;
+}
+
+
+/*       Fim Login     */
+
+form .label {
+    color: #247BA0;
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+i {
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* MENU */
+
+.menu-user {
+    height: 100%;
+    background-color: #3F85BC;
+    color: white;
+}
+
+.menu-cabecalho {
+    height: 100%;
+    background-color: #3978A9;
+}
+
+.menu {
+    color: white;
+    background-color: #2A2D34;
+}
+
+
+/* Scrollbar */
+
+.menu::-webkit-scrollbar {
+    background-color: #2A2D34;
+    width: 5px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: #818181;
+}
+
+.menu li {
+    font: normal 15px arial;
+    list-style-type: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
+
+.active {
+    text-decoration: none;
+    color: white;
+    border-right: solid 4px #0d6efd;
+    /* background-color: #2a2d3465; */
+    opacity: 1;
+}
+
+.nav-item:focus,
+.nav-item:hover {
+    text-decoration: none;
+    color: white;
+    /* border-right: solid #247BA0; */
+    /* background-color: #2a2d3465; */
+    opacity: 1;
+}
+
+
+/* .active {
+    border-left: solid #247BA0;
+    background-color: #2a2d3465;
+    opacity: 1;
+} */
+
+.menu i {
+    margin-right: 5px;
+}
+
+.info-user {
+    background-color: #2A2D34;
+    color: white;
+}
+
+
+/* FIM MENU */
+
+.container-default {
+    background-color: white;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.button-none {
+    border: none;
+    background-color: transparent;
+}
+
+#qualityCT a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#qualityCT a:hover {
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.table-test th {
+    width: 20%;
+}
+
+
+/* Action Buttons */
+
+.action-btn {
+    font: normal 12pt arial;
+}
+
+
+/* execute test*/
+
+.table-limit {
+    max-height: 92%;
+    overflow-y: auto;
+}
+
+.table-limit-home {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#row_table {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.table-limit-execute {
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+
+/* Spinner loading*/
+
+.lds-ring {
+    display: flex;
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border: 8px solid #dfc;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #247BA0 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.test {
+    position: static;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Testando dropdown */
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.col-max {
+    height: 100%;
+}
+
+
+/* dropdown sidebar */
+
+
+/* Fixed sidenav, full height */
+
+
+/* Style the sidenav links and the dropdown button */
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a {
+    display: block;
+    padding: 5px 7px 5px 10px;
+}
+
+
+/* On mouse-over */
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+
+/* Main content */
+
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 16.5px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+
+/* Add an active class to the active dropdown button */
+
+
+/* .active {
+    text-decoration: none;
+    color: white;
+    border-left: solid #247BA0;
+    background-color: #2a2d3465;
+    opacity: 1;
+} */
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    background-color: #35373a;
+    padding-left: 8px;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.hidden-drop {
+    display: none;
+}
+
+.show-drop {
+    display: block;
+}
